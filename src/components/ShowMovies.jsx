@@ -6,7 +6,7 @@ import FormControl from 'react-bootstrap/FormControl';
 class ShowMovies extends React.Component {
 
   state = {
-    query: this.props.query
+    query: ""
   }
 
   /* 
@@ -31,6 +31,10 @@ class ShowMovies extends React.Component {
     }
   }
 
+  async componentDidMount() {
+    this.fetchMovies(this.props.query);
+  }
+
   render () {
     return(
       <div className="search-bar" style={{width: "30vw"}}>
@@ -44,6 +48,11 @@ class ShowMovies extends React.Component {
         }} aria-label="Large" aria-describedby="inputGroup-sizing-sm" />
       </InputGroup>
       </div>
+      {/* <Container>
+        <Row>
+
+        </Row>
+      </Container> */}
     )
   }
 }
