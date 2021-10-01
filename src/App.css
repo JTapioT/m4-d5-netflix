@@ -105,3 +105,8 @@ footer {
   height: 300px;
   max-height: 350px;
 }
+
+.dropdown {
+  position: relative;
+  margin-left: 10px;
+}
