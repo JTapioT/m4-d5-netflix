@@ -6,8 +6,8 @@ class GenresMenu extends React.Component {
       <div className="container mt-5">
         <div className="d-flex">
           <h2 className="text-white">Movies</h2>
-          <div>
-            <div className="dropdown">
+          <div className="dropdown">
+            <div >
               <button
                 className="btn btn-secondary dropdown-toggle bg-dark"
                 type="button"
