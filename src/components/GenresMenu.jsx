@@ -22,13 +22,13 @@ class GenresMenu extends React.Component {
                 className="dropdown-menu"
                 aria-labelledby="dropdownMenuButton"
               >
-                <a className="dropdown-item" href="#">
+                <a className="dropdown-item" href="https://www.netflix.com">
                   Action
                 </a>
-                <a className="dropdown-item" href="#">
+                <a className="dropdown-item" href="https://www.netflix.com">
                   Horror
                 </a>
-                <a className="dropdown-item" href="#">
+                <a className="dropdown-item" href="https://www.netflix.com">
                   Comedy
                 </a>
               </div>
