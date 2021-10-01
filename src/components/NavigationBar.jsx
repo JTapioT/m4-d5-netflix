@@ -2,9 +2,7 @@ import Navbar from 'react-bootstrap/Navbar'
 import React from 'react'
 import Nav from 'react-bootstrap/Nav'
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import Form from 'react-bootstrap/Form'
-import Button from 'react-bootstrap/Button'
-import FormControl from 'react-bootstrap/FormControl'
+
 
 class NavigationBar extends React.Component {
   render() {
