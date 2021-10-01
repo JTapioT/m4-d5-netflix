@@ -3,10 +3,10 @@ import React from 'react';
 class GenresMenu extends React.Component {
   render() {
     return (
-      <div className="container genres-drop-down">
-        <div className="row">
-          <h1>Movies</h1>
-          <div className="column">
+      <div className="container mt-5">
+        <div className="d-flex">
+          <h1 className="text-white">Movies</h1>
+          <div>
             <div className="dropdown">
               <button
                 className="btn btn-secondary dropdown-toggle bg-dark"
