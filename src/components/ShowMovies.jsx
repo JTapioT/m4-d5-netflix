@@ -12,14 +12,14 @@ class ShowMovies extends React.Component {
   http://www.omdbapi.com/?apikey=[PUT_YOUR_API_KEY_HERE]&s=harry%20potter 
   */
 
-  async fetchMovies() {
-    let query = this.state.query;
+  async fetchMovies(q) {
+    let query = q;
     /* let apiKey = "2850d816"; */
 
     console.log(query);
 
     try {
-      let response = await fetch(`http://www.omdbapi.com/?apikey=2850d816&s=${query}`)
+      let response = await fetch(`http://www.omdbapi.com/?apikey=2850d816&s={${query}}`)
 
       if(response.ok) {
         let responseJSON = await response.json();
@@ -39,7 +39,7 @@ class ShowMovies extends React.Component {
           this.setState({
             query: event.target.value
           })
-          this.fetchMovies();
+          this.fetchMovies(event.target.value);
         }} aria-label="Large" aria-describedby="inputGroup-sizing-sm" />
       </InputGroup>
       </div>
