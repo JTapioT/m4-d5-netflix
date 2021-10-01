@@ -1,3 +1,8 @@
+import facebookLogo from '../assets/facebook-square-brands.svg'
+import instagramLogo from '../assets/instagram-square-brands.svg'
+import twitterLogo from '../assets/twitter-brands.svg'
+import youtubeLogo from '../assets/youtube-brands.svg'
+
 function Footer() {
   return(
 
@@ -6,38 +11,38 @@ function Footer() {
     <div className="row">
       <div className="col-8 col-8 offset-2">
         {/* Insert logos to this flex-container */}
-        <a>
+        <a href="https://www.netflix.com">
           <img
-            src="../assets/facebook-square-brands.svg"
+            src={facebookLogo}
             className="footer-icon"
             alt="footer-link-icon"
             width={25}
             height={25}
           />
         </a>
-        <a>
+        <a href="https://www.netflix.com">
           <img
-            src="../assets/instagram-square-brands.svg"
+            src={instagramLogo}
             className="footer-icon"
             alt="footer-link-icon"
             width={25}
             height={25}
           />
         </a>
-        <a>
+        <a href="https://www.netflix.com">
           {" "}
           <img
-            src="../assets/twitter-brands.svg"
+            src={twitterLogo}
             className="footer-icon"
             alt="footer-link-icon"
             width={25}
             height={25}
           />
         </a>
-        <a>
+        <a href="https://www.netflix.com">
           {" "}
           <img
-            src="../assets/youtube-brands.svg"
+            src={youtubeLogo}
             className="footer-icon"
             alt="footer-link-icon"
             width={25}
@@ -64,7 +69,7 @@ function Footer() {
         </div>
       </div>
     </div>
-    <a href="#" className="col-8 offset-2 footer-btn">
+    <a href="https://www.netflix.com" className="col-8 offset-2 footer-btn">
       Service Code
     </a>
     <p className="col-8 offset-2 mt-4 footer-copyright">

@@ -56,3 +56,35 @@ h1 {
   top: -5px;
 }
 
+.footer-icon {
+  filter: invert(57%) sepia(3%) saturate(0%) hue-rotate(45deg) brightness(84%) contrast(86%);
+}
+
+footer {
+  margin-top: 10em;
+}
+
+.footer-icon {
+  margin-right: 1em;
+}
+
+.footer-btn {
+  text-decoration: none;
+  color:#7c7c7c;
+  padding: 0.4em 0.4em;
+  border: 1px solid #7c7c7c;
+}
+
+.footer-btn:hover {
+  text-decoration: none;
+  color:#7c7c7c;
+  background-color: #d8d8d8;
+}
+
+
+.footer-copyright {
+  font-size: 0.9rem;
+  padding: 0;
+}
+
+
