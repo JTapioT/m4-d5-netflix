@@ -5,7 +5,7 @@ class GenresMenu extends React.Component {
     return (
       <div className="container mt-5">
         <div className="d-flex">
-          <h1 className="text-white">Movies</h1>
+          <h2 className="text-white">Movies</h2>
           <div>
             <div className="dropdown">
               <button
