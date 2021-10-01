@@ -49,3 +49,10 @@ body {
   left: -240px;
   top: 50px;
 }
+
+h1 {
+  position: relative;
+  right: 20px;
+  top: -5px;
+}
+
