@@ -6,7 +6,7 @@ import FormControl from 'react-bootstrap/FormControl';
 class ShowMovies extends React.Component {
 
   state = {
-    query: ""
+    query: this.props.query
   }
 
   /* 
@@ -29,10 +29,6 @@ class ShowMovies extends React.Component {
     } catch(error) {
       console.log(error);
     }
-  }
-
-  async componentDidMount() {
-    this.fetchMovies(this.props.query);
   }
 
   render () {
