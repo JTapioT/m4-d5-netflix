@@ -2,13 +2,23 @@ import Navbar from 'react-bootstrap/Navbar'
 import React from 'react'
 import Nav from 'react-bootstrap/Nav'
 import NavDropdown from 'react-bootstrap/NavDropdown';
-
+import NetflixLogo from '../assets/Netflix_Logo_RGB.png';
 
 class NavigationBar extends React.Component {
   render() {
     return (
       <Navbar bg="dark" expand="lg">
-        <Navbar.Brand href="#home">Netflix</Navbar.Brand>
+        <Navbar.Brand href="#home">
+      <a class="navbar-brand d-inline-block align-middle mr-2" href="#"
+        ><img
+          
+          class="pr-10"
+          src={NetflixLogo}
+          width="80"
+          height="30"
+          alt=""
+      /></a>
+    </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto links">
