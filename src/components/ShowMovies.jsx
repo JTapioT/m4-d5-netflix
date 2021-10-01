@@ -43,7 +43,7 @@ class ShowMovies extends React.Component {
     this.fetchMovies(this.props.query)
   }
 
-  render () {
+  render() {
     return(
       <div className="container mt-5">
       <div className="mt-5" style={{width: "30vw"}}>
