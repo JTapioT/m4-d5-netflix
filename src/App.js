@@ -12,6 +12,8 @@ function App() {
       <NavigationBar />
       <GenresMenu />
       <ShowMovies query="Harry Potter"/>
+      <ShowMovies query="Titanic"/>
+      <ShowMovies query="Bill Murray"/>
       <Footer/>
     </div>
   );
