@@ -11,10 +11,10 @@ function App() {
     <div>
       <NavigationBar />
       <GenresMenu />
-      <ShowMovies query="Harry Potter"/>
-      <ShowMovies query="Titanic"/>
-      <ShowMovies query="Bill Murray"/>
-      <Footer/>
+      <ShowMovies searchBar="true" query="Harry Potter" />
+      <ShowMovies searchBar="false" query="Lord of The Rings" />
+      <ShowMovies searchBar="false" query="Star Wars" />
+      <Footer />
     </div>
   );
 }
