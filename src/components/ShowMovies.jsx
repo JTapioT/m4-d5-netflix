@@ -31,6 +31,10 @@ class ShowMovies extends React.Component {
     }
   }
 
+  async componentDidMount() {
+    this.fetchMovies(this.props.query)
+  }
+
   render () {
     return(
       <div className="search-bar" style={{width: "30vw"}}>
