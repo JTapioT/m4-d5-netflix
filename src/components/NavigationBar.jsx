@@ -11,7 +11,6 @@ class NavigationBar extends React.Component {
         <Navbar.Brand href="#home">
       <a class="navbar-brand d-inline-block align-middle mr-2" href="#"
         ><img
-          
           class="pr-10"
           src={NetflixLogo}
           width="80"
