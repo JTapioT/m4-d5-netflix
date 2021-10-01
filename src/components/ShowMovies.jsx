@@ -44,15 +44,15 @@ class ShowMovies extends React.Component {
           this.setState({
             query: event.target.value
           })
-          this.fetchMovies(event.target.value);
-        }} aria-label="Large" aria-describedby="inputGroup-sizing-sm" />
+        }} onKeyPress={(event) => {
+          if(event.charCode === 13) {
+            this.fetchMovies(event.target.value);
+          }
+        }
+
+        } aria-label="Large" aria-describedby="inputGroup-sizing-sm" />
       </InputGroup>
       </div>
-      {/* <Container>
-        <Row>
-
-        </Row>
-      </Container> */}
     )
   }
 }
