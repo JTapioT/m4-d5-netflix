@@ -8,12 +8,39 @@ class ShowMovies extends React.Component {
     query: this.props.query
   }
 
+  /* 
+  http://www.omdbapi.com/?apikey=[PUT_YOUR_API_KEY_HERE]&s=harry%20potter 
+  */
+
+  async fetchMovies() {
+    let query = this.state.query;
+    /* let apiKey = "2850d816"; */
+
+    console.log(query);
+
+    try {
+      let response = await fetch(`http://www.omdbapi.com/?apikey=2850d816&s=${query}`)
+
+      if(response.ok) {
+        let responseJSON = await response.json();
+        console.log(responseJSON);
+      }
+    } catch(error) {
+      console.log(error);
+    }
+  }
+
   render () {
     return(
       <div style={{width: "30vw"}}>
       <InputGroup size="lg">
         <InputGroup.Text id="inputGroup-sizing-lg">Large</InputGroup.Text>
-        <FormControl value={"search movies"} aria-label="Large" aria-describedby="inputGroup-sizing-sm" />
+        <FormControl value={this.state.query} onChange={(event) => {
+          this.setState({
+            query: event.target.value
+          })
+          this.fetchMovies();
+        }} aria-label="Large" aria-describedby="inputGroup-sizing-sm" />
       </InputGroup>
       </div>
     )
