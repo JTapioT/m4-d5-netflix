@@ -2,6 +2,7 @@ import React from 'react';
 import InputGroup from 'react-bootstrap/InputGroup';
 import FormControl from 'react-bootstrap/FormControl';
 
+
 class ShowMovies extends React.Component {
 
   state = {
@@ -32,8 +33,8 @@ class ShowMovies extends React.Component {
 
   render () {
     return(
-      <div style={{width: "30vw"}}>
-      <InputGroup size="lg">
+      <div className="search-bar" style={{width: "30vw"}}>
+      <InputGroup size="lg" >
         <InputGroup.Text id="inputGroup-sizing-lg">Large</InputGroup.Text>
         <FormControl value={this.state.query} onChange={(event) => {
           this.setState({

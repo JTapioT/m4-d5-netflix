@@ -87,4 +87,8 @@ footer {
   padding: 0;
 }
 
-
+.search-bar {
+  position: relative;
+  margin-left: 650px !important;
+  top: -10px;
+}
